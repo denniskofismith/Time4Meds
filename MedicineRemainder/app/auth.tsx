@@ -41,9 +41,10 @@ export default function AuthScreen() {
             })
 
             if(auth.success) {
-                router.replace("/(tabs)")
+                router.replace("/home")
             } else{
                 setError("Authentication Failed: please try again ")
+                setisAuthenticating(false)
             }
         }
         catch (error) {

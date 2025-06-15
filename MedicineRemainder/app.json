@@ -9,7 +9,10 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+       "infoPlist": {
+      "NSCameraUsageDescription": "Used to scan your face ID"
+    }
     },
     "android": {
       "adaptiveIcon": {
