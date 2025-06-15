@@ -39,12 +39,13 @@ function CircularProgress({
   });
 
   return (
-    <View >
-      <View >
-        <Text >
+    <View style={styles.progressContainer}>
+      <View style={styles.progressTextContainer}>
+        <Text style={styles.progressPercentage}>
           {Math.round(progress * 100)}%
         </Text>
-        <Text>
+        <Text style={styles.progressLabel}>
+            {" "}
           {completedDoses} of {totalDoses} doses
         </Text>
       </View>
