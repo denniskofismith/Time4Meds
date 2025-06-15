@@ -41,7 +41,7 @@ export default function AuthScreen() {
             })
 
             if(auth.success) {
-                router.replace('/')
+                router.replace("/(tabs)")
             } else{
                 setError("Authentication Failed: please try again ")
             }
